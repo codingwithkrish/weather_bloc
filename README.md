@@ -1,6 +1,6 @@
 # weather_bloc
- Weather App Made With Bloc
- package used for
+ Weather App Made With Bloc  
+ package used for  
  code generators  freezed_annotation: ^2.4.1,freezed: ^2.4.6,build_runner: ^2.4.7  ,json_serializable: 6.7.1,json_annotation: ^4.8.1
   state management - flutter_bloc: ^8.1.3
   responsiveness-flutter_screenutil: ^5.9.0
