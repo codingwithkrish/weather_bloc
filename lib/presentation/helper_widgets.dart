@@ -42,7 +42,7 @@ Widget citySearchTextField(TextEditingController controller,VoidCallback onPress
 }
 
 Widget weatherInfoContainer(BuildContext context, VoidCallback onChangedUnit,
-    CurrentWeather currentWeather, String city, String units) {
+    CurrentWeather currentWeather, String city, String units,VoidCallback refresh) {
   return Container(
     margin: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
     padding: EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
@@ -85,7 +85,7 @@ Widget weatherInfoContainer(BuildContext context, VoidCallback onChangedUnit,
             mainAxisSize: MainAxisSize.min,
             children: [
               IconButton(
-                onPressed: onChangedUnit,
+                onPressed: refresh,
                 icon: Icon(
                   Icons.refresh,
                   color: AppColors.textColorDay,

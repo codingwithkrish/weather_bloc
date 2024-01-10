@@ -44,7 +44,7 @@ _$CurrentWeatherImpl _$$CurrentWeatherImplFromJson(Map<String, dynamic> json) =>
       pressure: json['pressure'] as int?,
       humidity: json['humidity'] as int?,
       dewPoints: (json['dewPoints'] as num?)?.toDouble(),
-      uvi: json['uvi'] as int?,
+      uvi: (json['uvi'] as num?)?.toDouble(),
       clouds: json['clouds'] as int?,
       visibility: json['visibility'] as int?,
       windSpeed: (json['windSpeed'] as num?)?.toDouble(),

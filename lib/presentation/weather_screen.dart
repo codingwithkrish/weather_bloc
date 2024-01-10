@@ -47,7 +47,12 @@ class WeatherScreen extends StatelessWidget {
                                 longitude: long,
                                 fetchPosition: false));
                           }, state.weatherModel.current!, state.city,
-                              _weatherBloc.getUnits),
+                              _weatherBloc.getUnits,(){
+                                _weatherBloc.add(WeatherFetchEvent(
+                                    latitude: lat,
+                                    longitude: long,
+                                    fetchPosition: true));
+                              }),
                           weatherHourlyContainer(
                               context,
                               state.weatherModel.hourly,

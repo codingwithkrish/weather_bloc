@@ -30,7 +30,7 @@ class CurrentWeather with _$CurrentWeather {
       int? pressure,
       int? humidity,
       double? dewPoints,
-      int? uvi,
+      double? uvi,
       int? clouds,
       int? visibility,
       double? windSpeed,

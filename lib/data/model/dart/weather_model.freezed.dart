@@ -332,7 +332,7 @@ mixin _$CurrentWeather {
   int? get pressure => throw _privateConstructorUsedError;
   int? get humidity => throw _privateConstructorUsedError;
   double? get dewPoints => throw _privateConstructorUsedError;
-  int? get uvi => throw _privateConstructorUsedError;
+  double? get uvi => throw _privateConstructorUsedError;
   int? get clouds => throw _privateConstructorUsedError;
   int? get visibility => throw _privateConstructorUsedError;
   double? get windSpeed => throw _privateConstructorUsedError;
@@ -360,7 +360,7 @@ abstract class $CurrentWeatherCopyWith<$Res> {
       int? pressure,
       int? humidity,
       double? dewPoints,
-      int? uvi,
+      double? uvi,
       int? clouds,
       int? visibility,
       double? windSpeed,
@@ -432,7 +432,7 @@ class _$CurrentWeatherCopyWithImpl<$Res, $Val extends CurrentWeather>
       uvi: freezed == uvi
           ? _value.uvi
           : uvi // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as double?,
       clouds: freezed == clouds
           ? _value.clouds
           : clouds // ignore: cast_nullable_to_non_nullable
@@ -474,7 +474,7 @@ abstract class _$$CurrentWeatherImplCopyWith<$Res>
       int? pressure,
       int? humidity,
       double? dewPoints,
-      int? uvi,
+      double? uvi,
       int? clouds,
       int? visibility,
       double? windSpeed,
@@ -544,7 +544,7 @@ class __$$CurrentWeatherImplCopyWithImpl<$Res>
       uvi: freezed == uvi
           ? _value.uvi
           : uvi // ignore: cast_nullable_to_non_nullable
-              as int?,
+              as double?,
       clouds: freezed == clouds
           ? _value.clouds
           : clouds // ignore: cast_nullable_to_non_nullable
@@ -609,7 +609,7 @@ class _$CurrentWeatherImpl implements _CurrentWeather {
   @override
   final double? dewPoints;
   @override
-  final int? uvi;
+  final double? uvi;
   @override
   final int? clouds;
   @override
@@ -704,7 +704,7 @@ abstract class _CurrentWeather implements CurrentWeather {
       final int? pressure,
       final int? humidity,
       final double? dewPoints,
-      final int? uvi,
+      final double? uvi,
       final int? clouds,
       final int? visibility,
       final double? windSpeed,
@@ -731,7 +731,7 @@ abstract class _CurrentWeather implements CurrentWeather {
   @override
   double? get dewPoints;
   @override
-  int? get uvi;
+  double? get uvi;
   @override
   int? get clouds;
   @override
